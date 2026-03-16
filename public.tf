@@ -45,3 +45,14 @@ resource "aws_subnet" "eks_subnet_public_1b" {
     }
   )
 }
+
+# associação das route tables com as subnets
+resource "aws_route_table_association" "eks_rtb_assoc_1a" {
+  subnet_id      = aws_subnet.eks_subnet_public_1a
+  route_table_id = aws_route_table.eks_pub_route_table
+}
+
+resource "aws_route_table_association" "eks_rtb_assoc_1b" {
+  subnet_id      = aws_subnet.eks_subnet_public_1b
+  route_table_id = aws_route_table.eks_pub_route_table
+}
