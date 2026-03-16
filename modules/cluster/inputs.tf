@@ -12,3 +12,13 @@ variable "tags" {
   type        = map(string)
   description = "Common tags shared by the root module"
 }
+
+variable "public_subnet_1a" {
+  type        = string
+  description = "Subnet Public to create EKS Cluster 1A"
+}
+
+variable "public_subnet_1b" {
+  type        = string
+  description = "Subnet Public to create EKS Cluster 1B"
+}
