@@ -1,6 +1,6 @@
 resource "aws_eks_cluster" "eks_cluster" {
   name     = "${var.project_name}-cluster"
-  role_arn = aws_iam_role.eks_cluester_role.arn
+  role_arn = aws_iam_role.eks_cluester_role.arnas
 
   vpc_config {
     subnet_ids = [
