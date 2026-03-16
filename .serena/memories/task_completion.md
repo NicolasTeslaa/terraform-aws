@@ -1,0 +1,1 @@
+After changes, run Terraform formatting and validation when the terraform CLI is available: `terraform fmt -recursive`, `terraform validate`, and `terraform plan -var-file terraform.tfvars`. Also inspect module interfaces so every argument passed from root is declared in each child module.

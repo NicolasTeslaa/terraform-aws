@@ -1,0 +1,1 @@
+Terraform code is split across multiple .tf files and now being refactored into child modules under modules/. Variable names use snake_case. Common tags are defined in locals blocks. Keep module inputs explicitly declared in each module's variables.tf and avoid referencing undeclared root locals from child-module calls.

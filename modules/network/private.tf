@@ -11,7 +11,7 @@ resource "aws_subnet" "eks_subnet_private_1a" {
   availability_zone = "${data.aws_region.current.name}a"
 
   tags = merge(
-    local.tags,
+    var.tags,
     {
       Name = "${var.project_name}-subnet-priv-1a"
       # essa tag faz com que o AWS Load Balancer funcione corretamente com o k8s
@@ -31,7 +31,7 @@ resource "aws_subnet" "eks_subnet_private_1b" {
   availability_zone = "${data.aws_region.current.name}b"
 
   tags = merge(
-    local.tags,
+    var.tags,
     {
       Name = "${var.project_name}-subnet-priv-1b"
       # essa tag faz com que o AWS Load Balancer funcione corretamente com o k8s

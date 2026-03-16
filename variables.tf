@@ -13,3 +13,8 @@ variable "project_name" {
   type        = string
   description = "Project Name"
 }
+
+variable "tags" {
+  type        = map(string)
+  description = "Common tags shared by the root module"
+}

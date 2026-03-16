@@ -1,0 +1,1 @@
+Terraform project for AWS infrastructure provisioning. Root module currently delegates to child modules in modules/network and modules/cluster. Main files at repo root: provider.tf, variables.tf, terraform.tfvars, modules.tf. Uses AWS provider and S3 backend configuration.

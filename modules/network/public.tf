@@ -14,7 +14,7 @@ resource "aws_subnet" "eks_subnet_public_1a" {
   map_public_ip_on_launch = true
 
   tags = merge(
-    local.tags,
+    var.tags,
     {
       Name = "${var.project_name}-subnet-pub-1a"
       # essa tag faz com que o AWS Load Balancer funcione corretamente com o k8s
@@ -37,7 +37,7 @@ resource "aws_subnet" "eks_subnet_public_1b" {
   map_public_ip_on_launch = true
 
   tags = merge(
-    local.tags,
+    var.tags,
     {
       Name = "${var.project_name}-subnet-pub-1b"
       # essa tag faz com que o AWS Load Balancer funcione corretamente com o k8s

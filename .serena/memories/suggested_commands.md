@@ -1,0 +1,1 @@
+Windows/PowerShell commands likely used in this repo:\n- `terraform init`\n- `terraform validate`\n- `terraform fmt -recursive`\n- `terraform plan -var-file terraform.tfvars`\n- `terraform apply -var-file terraform.tfvars`\n- `git status --short`\n- `Get-ChildItem` / `Get-Content` for file inspection on Windows.
